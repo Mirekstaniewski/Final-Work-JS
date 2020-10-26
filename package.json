@@ -1,0 +1,28 @@
+{
+  "name": "final-work-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirekstaniewski/Final-Work-JS.git"
+  },
+  "author": "Miroslaw Staniewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirekstaniewski/Final-Work-JS/issues"
+  },
+  "homepage": "https://github.com/Mirekstaniewski/Final-Work-JS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.1.2"
+  }
+}
