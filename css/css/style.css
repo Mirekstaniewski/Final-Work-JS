@@ -74,6 +74,10 @@ body {
     border: none;
     cursor: pointer;
 }
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
 .button__icon {
     height: 50px;
     width: 50px;
@@ -89,6 +93,11 @@ body {
     fill: crimson;
     animation: shake .1s ease-in infinite;
 }
+
+.hide {
+    display: none;
+}
+
 /* анимация встряски для будильника */
 @keyframes shake {
     25% {
