@@ -61,9 +61,13 @@ body {
 .clock__input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 } 
+/* избавится от переключателей  Firefox */
+.clock__input {
+   -moz-appearance: textfield;
+}
 /* блокировка полей при включеном таймере */
 .clock__input:disabled {
-    border: 1px solid black;
+    border: 1px solid rgb(95, 72, 72);
 }
 .clock__label {
     font-size: 32px;
