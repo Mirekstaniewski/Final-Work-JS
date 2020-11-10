@@ -5,96 +5,116 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 body {
     box-sizing: border-box;
-    font-family: 'Aldrich' , sans-serif;
-    color: white;
+    font-family: 'Aldrich', sans-serif;
+    color: #4948479a;
 }
+
 .timer {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color:#f2f3f4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .timer__header {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 1em;
 }
+
 .timer__heading {
-    font-size: 118px;
+    font-size: 7em;
+    font-weight: 100;
 }
+
 .timer__clock {
     display: flex;
+   margin-top: 30px;
 }
+
 .timer__buttons {
-    width: 450px;
-    display: flex; 
+    width: 400px;
+    display: flex;
     justify-content: space-around;
     margin-top: 35px;
     position: relative;
+    
 }
+
 .timer__audio {
     position: absolute;
     bottom: -100px;
 }
+
 .clock {
+    max-width: 32vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .clock__input {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
+    box-shadow:  6px 6px 8px #494847;
+    background-color:#f2f3f4;
+    color: #494847;
     font-family: inherit;
-    font-size: 90px;
+    font-size: 78px;
+    max-width: 31vw;
+    max-height: 33vw;
     width: 150px;
     height: 150px;
+    margin: 3px;
     text-align: center;
 }
+
 /* избавится от переключателей (кроме Firefox) */
 .clock__input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-} 
+}
+
 /* избавится от переключателей  Firefox */
 .clock__input {
-   -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
+
 /* блокировка полей при включеном таймере */
 .clock__input:disabled {
-    border: 1px solid rgb(95, 72, 72);
+    border: 1px solid #f2f3f4;
 }
+
 .clock__label {
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .button {
-    background-color: transparent;
-    border: none;
     cursor: pointer;
+    border: none;
 }
+
 .button:disabled {
     pointer-events: none;
     opacity: 0.4;
 }
+
 .button__icon {
+    box-shadow: 4px 4px 8px #a2a3a3;
     height: 50px;
     width: 50px;
     /* для svg */
-    fill: white;
+    fill: #494847;
     transition: fill 0.2s ease-in;
 }
+
 .button__icon:hover {
-    fill: #58dd9f;
+    fill: #67b685;
 }
 
 .button__icon--alarm {
-    fill: crimson;
+    fill: #f33473;
     animation: shake .1s ease-in infinite;
 }
 
@@ -107,6 +127,7 @@ body {
     25% {
         transform: translateX(-1px);
     }
+
     75% {
         transform: translateX(1px);
     }
